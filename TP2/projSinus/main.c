@@ -26,13 +26,12 @@ int myfact(int n) {
 double puissance(double x, int n){
     double res = x;
     if(n == 0)
-        res = 1;
+        res = 1.0f;
     else {
         int i;
-        for (i = 0; i < n; i++) {
+        for (i = 1; i < n; i++) {
             res *= x;
         }
-
     }
     return res;
 }
@@ -50,17 +49,36 @@ double sinus(double x, int n){
 }
 
 double suiv(double t, double x, int n){
+    return t * (puissance(x,2)/(n*(n-1)));
+}
+double suivR(double x, int n){
+    if(n <= 0){
+       return x;
+    }else if(n == 1) {
+        return x;
+    }
+    return suivR(x, n-2) * (puissance(x,2)/(n*(n-1)));
+}
 
+double sinus2(double x, int n){
+    double r = 0.0f;
+    int i;
+    for(i = 0; i < n; i++){
+        r += puissance(-1, i) * suivR(x, i);
+    }
+    return r;
 }
 
 int main()
 {
- int i;
- for(i=1; i<=41; i+=2){
-     printf("sinus(PI/2) au rang %d = %g\n", i, sinus(M_PI/2,i));
- }
- printf("sin(PI/2)=%g\n",sin(M_PI/2));
-    printf("sin(PI/2)=%g\n",sinus(M_PI/2,1));
-
-    return EXIT_SUCCESS;
+     int i;
+     for(i=1; i<=41; i+=2){
+         printf("sinus(PI/2) au rang %d = %g\n", i, sinus(M_PI/2,i));
+     }
+     printf("sin(PI/2)=%g\n",sin(M_PI/2));
+     printf("sin(PI/2)=%g\n",sinus(M_PI/2,1));
+    for(i=1; i<=41; i+=2){
+        printf("sinus2(PI/2, %d)=%g\n", i, sinus2(M_PI/2,i));
+    }
+     return EXIT_SUCCESS;
 }
