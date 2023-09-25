@@ -1,0 +1,10 @@
+/*
+// Created by aysul on 24/09/23.
+*/
+
+#ifndef TUTO_COMPIL_SEPAREE_MESFONCTIONSMATHS_H
+#define TUTO_COMPIL_SEPAREE_MESFONCTIONSMATHS_H
+
+float monCarre(float n);
+#endif /*TUTO_COMPIL_SEPAREE_MESFONCTIONSMATHS_H*/
+
