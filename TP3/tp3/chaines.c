@@ -10,7 +10,7 @@
 void saisie_nom_prenom(char * nom, char * prenom){
     printf("prenom : ");
     scanf("%s", prenom);
-    printf("\nnom : ");
+    printf("nom : ");
     scanf("%s", nom);
     printf("Bonjour %s %s !\n", prenom, nom);
 }
@@ -30,11 +30,11 @@ char* id_from_nom_prenom_low(char* nom, char* prenom, char * id){
     i=0;
 
     while(i < MAX_ID-1){
-        t[i] = tolower((unsigned char) nom[i++]);
+        t[i] = tolower((unsigned char) nom[i]);
+        i++;
     }
 
-    prenom[0] = tolower((unsigned char) prenom[0]);
-    id[0] = prenom[0];
+    id[0] = tolower((unsigned char) prenom[0]);
 
     strncat(id,t, MAX_ID-1);
 

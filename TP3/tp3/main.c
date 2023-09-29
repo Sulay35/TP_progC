@@ -34,7 +34,6 @@ int main()
 
         id_from_nom_prenom(nom,prenom, id);
 
-        printf("\n");
         printf("id1 : %s\n", id);
 
         id_from_nom_prenom_low(nom,prenom, id2);

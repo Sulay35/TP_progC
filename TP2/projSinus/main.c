@@ -41,7 +41,7 @@ double terme(double x, int n){
 }
 double sinus(double x, int n){
     int i;
-    double res=0;
+    double res=0.0f;
     for(i=0; i<=n; i++){
         res += puissance((-1),i)*terme(x,2*i+1);
     }
@@ -49,8 +49,11 @@ double sinus(double x, int n){
 }
 
 double suiv(double t, double x, int n){
+    if (n==0) return 0;
+    if (n==1) return x;
     return t * (puissance(x,2)/(n*(n-1)));
 }
+
 double suivR(double x, int n){
     if(n <= 0){
        return x;
@@ -61,12 +64,18 @@ double suivR(double x, int n){
 }
 
 double sinus2(double x, int n){
-    double r = 0.0f;
-    int i;
-    for(i = 0; i < n; i++){
-        r += puissance(-1, i) * suivR(x, i);
+    int i = 1;
+    double res = x;
+    double t = x;
+
+    if (n==1) return x;
+    while(i<n+1){
+        i+=2;
+        res += puissance(-1.0f, (i-1)/2) * suiv(t,x,i);
+        t = suiv(t,x,i);
+
     }
-    return r;
+    return res;
 }
 
 int main()
@@ -82,3 +91,12 @@ int main()
     }
      return EXIT_SUCCESS;
 }
+
+/*
+ * double r = 0.0f;
+    int i;
+    for(i = 0; i < n; i++){
+        r += puissance(-1, i) * suivR(x, i);
+    }
+    return r;
+ */
