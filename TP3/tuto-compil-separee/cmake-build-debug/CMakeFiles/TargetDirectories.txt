@@ -1,3 +1,0 @@
-/home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tuto-compil-separee/cmake-build-debug/CMakeFiles/tuto-compil-separee.dir
-/home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tuto-compil-separee/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tuto-compil-separee/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -24,19 +24,13 @@ char* id_from_nom_prenom(char* nom, char* prenom, char * id){
 }
 
 char* id_from_nom_prenom_low(char* nom, char* prenom, char * id){
-
     int i;
-    char t[MAX_ID];
-    i=0;
-
-    while(i < MAX_ID-1){
-        t[i] = tolower((unsigned char) nom[i]);
+    i=1;
+    id[0] = tolower(prenom[0]);
+    while(i < MAX_ID){
+        id[i] = tolower(nom[i-1]);
         i++;
     }
-
-    id[0] = tolower((unsigned char) prenom[0]);
-
-    strncat(id,t, MAX_ID-1);
-
+    id[i] = '\0';
     return id;
 }

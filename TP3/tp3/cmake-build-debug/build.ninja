@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: main-rand
+# Project: mainC
 # Configurations: Debug
 # =============================================================================
 
@@ -41,47 +41,47 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target main-rand
+# Object build statements for EXECUTABLE target mainC
 
 
 #############################################
-# Order-only phony target for main-rand
+# Order-only phony target for mainC
 
-build cmake_object_order_depends_target_main-rand: phony || CMakeFiles/main-rand.dir
+build cmake_object_order_depends_target_mainC: phony || CMakeFiles/mainC.dir
 
-build CMakeFiles/main-rand.dir/main.c.o: C_COMPILER__main-rand_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/main.c || cmake_object_order_depends_target_main-rand
-  DEP_FILE = CMakeFiles/main-rand.dir/main.c.o.d
+build CMakeFiles/mainC.dir/main.c.o: C_COMPILER__mainC_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/main.c || cmake_object_order_depends_target_mainC
+  DEP_FILE = CMakeFiles/mainC.dir/main.c.o.d
   FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main-rand.dir
-  OBJECT_FILE_DIR = CMakeFiles/main-rand.dir
+  OBJECT_DIR = CMakeFiles/mainC.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainC.dir
 
-build CMakeFiles/main-rand.dir/tableau.c.o: C_COMPILER__main-rand_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/tableau.c || cmake_object_order_depends_target_main-rand
-  DEP_FILE = CMakeFiles/main-rand.dir/tableau.c.o.d
+build CMakeFiles/mainC.dir/tableau.c.o: C_COMPILER__mainC_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/tableau.c || cmake_object_order_depends_target_mainC
+  DEP_FILE = CMakeFiles/mainC.dir/tableau.c.o.d
   FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main-rand.dir
-  OBJECT_FILE_DIR = CMakeFiles/main-rand.dir
+  OBJECT_DIR = CMakeFiles/mainC.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainC.dir
 
-build CMakeFiles/main-rand.dir/chaines.c.o: C_COMPILER__main-rand_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/chaines.c || cmake_object_order_depends_target_main-rand
-  DEP_FILE = CMakeFiles/main-rand.dir/chaines.c.o.d
+build CMakeFiles/mainC.dir/chaines.c.o: C_COMPILER__mainC_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/chaines.c || cmake_object_order_depends_target_mainC
+  DEP_FILE = CMakeFiles/mainC.dir/chaines.c.o.d
   FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main-rand.dir
-  OBJECT_FILE_DIR = CMakeFiles/main-rand.dir
+  OBJECT_DIR = CMakeFiles/mainC.dir
+  OBJECT_FILE_DIR = CMakeFiles/mainC.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main-rand
+# Link build statements for EXECUTABLE target mainC
 
 
 #############################################
-# Link the executable main-rand
+# Link the executable mainC
 
-build main-rand: C_EXECUTABLE_LINKER__main-rand_Debug CMakeFiles/main-rand.dir/main.c.o CMakeFiles/main-rand.dir/tableau.c.o CMakeFiles/main-rand.dir/chaines.c.o
+build mainC: C_EXECUTABLE_LINKER__mainC_Debug CMakeFiles/mainC.dir/main.c.o CMakeFiles/mainC.dir/tableau.c.o CMakeFiles/mainC.dir/chaines.c.o
   FLAGS = -Wall -Wextra -pedantic-errors -g
-  OBJECT_DIR = CMakeFiles/main-rand.dir
+  OBJECT_DIR = CMakeFiles/mainC.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = main-rand
-  TARGET_PDB = main-rand.dbg
+  TARGET_FILE = mainC
+  TARGET_PDB = mainC.dbg
 
 
 #############################################
@@ -117,7 +117,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/aysul/Documents/INSA/3INFO/progC/TPs/TP3/tp3/cmake-build-debug
 
-build all: phony main-rand
+build all: phony mainC
 
 # =============================================================================
 # Built-in targets
