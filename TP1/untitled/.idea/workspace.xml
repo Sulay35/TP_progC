@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27a130fe-97f5-4c66-b2f3-dd237cf33409" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../TP2/projSuite/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP2/projSuite/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tp3/chaines.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP3/tp3/chaines.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-aad7c96129b0c7f08991.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.cmake/api/v1/reply/index-2023-09-24T14-01-39-0417.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.cmake/api/v1/reply/target-tuto-compil-separee-Debug-d1dd4ef6331adbaf69fa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP3/tuto-compil-separee/cmake-build-debug/tuto-compil-separee" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2WCqDbtwaMVqdPwR4So6MZEceNr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27a130fe-97f5-4c66-b2f3-dd237cf33409" name="Changes" comment="" />
+      <created>1696246791407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696246791407</updated>
+      <workItem from="1696246792534" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

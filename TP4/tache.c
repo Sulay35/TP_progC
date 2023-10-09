@@ -2,6 +2,7 @@
 // Created by aysul on 02/10/23.
 */
 #include <stdio.h>
+#include <string.h>
 #include "tache.h"
 
 FILE * f;
@@ -36,17 +37,17 @@ int lireTachesFichier(char * nomFichier, Tache * tab_t){
         printf("Erreur d'ouverture du fichier %s\n", nomFichier);
         exit(567);
     }
-    char s[256];
+    char s[64];
     Tache t_tmp;
     while(!feof(f)){
-        //fgets(s, 256, f);
         fscanf(f,"%d %d %d", &(t_tmp.no), &(t_tmp.duree), &(t_tmp.nbPred));
         for(i=0; i<t_tmp.nbPred; i++) {
             fscanf(f, "%d", t_tmp.pred + i);
+
         }
-        fscanf(f,"%s", t_tmp.titre);
-        tab_t[j]=t_tmp;
-        j++;
+        fgets(s, 64, f);
+        strncpy(t_tmp.titre,s, strlen(s) -1);
+        tab_t[j++]=t_tmp;
     }
     fclose(f);
 
@@ -57,6 +58,36 @@ void afficheTabTaches(Tache *tab_t, int nbtaches){
     int i;
     for(i=0; i <nbtaches; i++){
         afficheTache(tab_t[i]);
+        printf("\n");
     }
+
 }
+
+int somme_total_duree (Tache *tab, int nbTaches){
+    int i;
+    int res = 0;
+    for(i=0; i<nbTaches; i++){
+        res += tab[i].duree;
+    }
+    return res;
+}
+
+int ecrireTachesFichier(char * nomFichier, Tache * tab_t, int nbTaches){
+    if((f = fopen(nomFichier,"w")) == (FILE *) NULL){
+        printf("Erreur d'ouverture du fichier %s\n", nomFichier);
+        return 0;
+    }
+
+    int i,j;
+    for(i=0; i <nbTaches; i++){
+        fprintf(f,"%d %d %d", tab_t[i].no, tab_t[i].duree, tab_t[i].nbPred);
+        for(j=0; j<tab_t[i].nbPred;j++){
+            fprintf(f," %d", tab_t[i].pred[j]);
+        }
+        fprintf(f, " %s\n", tab_t[i].titre);
+    }
+    fclose(f);
+    return 1;
+}
+
 
