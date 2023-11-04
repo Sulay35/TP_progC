@@ -31,19 +31,18 @@ void afficheTache(Tache t){
 }
 
 int lireTachesFichier(char * nomFichier, Tache * tab_t){
-    int i;
-    int j=0;
+    int i; Tache t_tmp;
+    int j=0; char s[64];
     if((f = fopen(nomFichier,"r")) == (FILE *) NULL){
         printf("Erreur d'ouverture du fichier %s\n", nomFichier);
         exit(567);
     }
-    char s[64];
-    Tache t_tmp;
+
+
     while(!feof(f)){
         fscanf(f,"%d %d %d", &(t_tmp.no), &(t_tmp.duree), &(t_tmp.nbPred));
         for(i=0; i<t_tmp.nbPred; i++) {
             fscanf(f, "%d", t_tmp.pred + i);
-
         }
         fgets(s, 64, f);
         strncpy(t_tmp.titre,s, strlen(s) -1);
@@ -73,12 +72,13 @@ int somme_total_duree (Tache *tab, int nbTaches){
 }
 
 int ecrireTachesFichier(char * nomFichier, Tache * tab_t, int nbTaches){
+    int i,j;
     if((f = fopen(nomFichier,"w")) == (FILE *) NULL){
         printf("Erreur d'ouverture du fichier %s\n", nomFichier);
         return 0;
     }
 
-    int i,j;
+
     for(i=0; i <nbTaches; i++){
         fprintf(f,"%d %d %d", tab_t[i].no, tab_t[i].duree, tab_t[i].nbPred);
         for(j=0; j<tab_t[i].nbPred;j++){
@@ -89,5 +89,27 @@ int ecrireTachesFichier(char * nomFichier, Tache * tab_t, int nbTaches){
     fclose(f);
     return 1;
 }
+
+
+Tache * lireTachesFichierDyn(char * nomFichier, int * nbTaches){
+    Tache * tabDyn;
+    if((f = fopen(nomFichier,"r")) == (FILE *) NULL){
+        printf("Erreur d'ouverture du fichier %s\n", nomFichier);
+        exit(567);
+    }
+    fscanf(f,"%d", nbTaches);
+
+    /*printf("nbTaches : %d\n", *nbTaches);*/
+    printf("s:%ld", sizeof(Tache));
+    fclose(f);
+
+    if((tabDyn = (Tache *) malloc(*nbTaches)) == NULL){
+        printf("Probleme alloc mem\n");
+        exit(43567);
+    }
+    *nbTaches = lireTachesFichier(nomFichier, tabDyn);
+    return tabDyn;
+}
+
 
 

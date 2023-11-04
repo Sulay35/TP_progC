@@ -34,6 +34,8 @@ typedef struct{
 
 
 
+
+
 void saisieTache(Tache *t);
 void afficheTache(Tache t);
 
@@ -41,7 +43,7 @@ int lireTachesFichier(char * nomFichier, Tache * tab_t);
 void afficheTabTaches(Tache *tab_t, int nbtaches);
 int somme_total_duree (Tache *tab, int nbTaches);
 int ecrireTachesFichier(char * nomFichier, Tache * tab_t, int nbTaches);
-
+Tache * lireTachesFichierDyn(char * nomFichier, int * nbTaches);
 #endif
 
 

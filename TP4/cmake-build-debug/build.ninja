@@ -51,13 +51,19 @@ build cmake_object_order_depends_target_TP4: phony || CMakeFiles/TP4.dir
 
 build CMakeFiles/TP4.dir/main.c.o: C_COMPILER__TP4_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP4/main.c || cmake_object_order_depends_target_TP4
   DEP_FILE = CMakeFiles/TP4.dir/main.c.o.d
-  FLAGS = -g -std=gnu90 -fdiagnostics-color=always
+  FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/TP4.dir
   OBJECT_FILE_DIR = CMakeFiles/TP4.dir
 
 build CMakeFiles/TP4.dir/tache.c.o: C_COMPILER__TP4_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP4/tache.c || cmake_object_order_depends_target_TP4
   DEP_FILE = CMakeFiles/TP4.dir/tache.c.o.d
-  FLAGS = -g -std=gnu90 -fdiagnostics-color=always
+  FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/TP4.dir
+  OBJECT_FILE_DIR = CMakeFiles/TP4.dir
+
+build CMakeFiles/TP4.dir/listechainee.c.o: C_COMPILER__TP4_unscanned_Debug /home/aysul/Documents/INSA/3INFO/progC/TPs/TP4/listechainee.c || cmake_object_order_depends_target_TP4
+  DEP_FILE = CMakeFiles/TP4.dir/listechainee.c.o.d
+  FLAGS = -Wall -Wextra -pedantic-errors -g -std=gnu90 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/TP4.dir
   OBJECT_FILE_DIR = CMakeFiles/TP4.dir
 
@@ -69,8 +75,8 @@ build CMakeFiles/TP4.dir/tache.c.o: C_COMPILER__TP4_unscanned_Debug /home/aysul/
 #############################################
 # Link the executable TP4
 
-build TP4: C_EXECUTABLE_LINKER__TP4_Debug CMakeFiles/TP4.dir/main.c.o CMakeFiles/TP4.dir/tache.c.o
-  FLAGS = -g
+build TP4: C_EXECUTABLE_LINKER__TP4_Debug CMakeFiles/TP4.dir/main.c.o CMakeFiles/TP4.dir/tache.c.o CMakeFiles/TP4.dir/listechainee.c.o
+  FLAGS = -Wall -Wextra -pedantic-errors -g
   OBJECT_DIR = CMakeFiles/TP4.dir
   POST_BUILD = :
   PRE_LINK = :
